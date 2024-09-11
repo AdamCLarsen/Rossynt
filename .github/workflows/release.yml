@@ -13,6 +13,7 @@ jobs:
   release:
     name: Publish Plugin
     runs-on: ubuntu-latest
+    if: github.repository == 'TSRBerry/Rossynt'  # Ensures this runs only in the original repository
     steps:
 
       - name: Download Release Asset
